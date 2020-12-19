@@ -1,1 +1,1 @@
-Dataset is too large to upload. Contact me via accesses in homepage to get dataset. 
+The dataset the sinograms of 190 axial locations. For simplicity only the 140th slice will be considered in this practice. Dataset is too large to upload. Contact me via accesses in homepage to get dataset. 
