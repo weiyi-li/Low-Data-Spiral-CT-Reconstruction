@@ -6,7 +6,7 @@ The dataset the sinograms of 190 axial locations. For simplicity only the 140th 
 ### Test 1
 **Using the raw data in ‘CT projections.mat’, preview the sinogram for 140th axial slice. The sinogram will have dimensions 380 (projection coordinate) x 180 (projection angle). For the double for loop shown in the script fill in the missing line to form the 140th sinogram and save the image as ‘TASK_1_CT_SINOGRAM.png’. Alternatively you can delete the for loop and directly index the data you need from within the projections. Complete a filtered and an unfiltered backprojection and save the images as 'TASK_1_CT_FILTERED_BP.png' and 'TASK_1_CT_UNFILTERED_BP.png' respectively.**
 #### Result of test 1
-![Image](https://github.com/weiyi-li/Low-Data-Spiral-CT-Reconstruction/blob/main/Image/Test1.png)
+![Image](https://github.com/weiyi-li/Low-Data-Spiral-CT-Reconstruction/blob/main/Image/Test1.png)  
 The sinogram for 140th axial slice is directly fetched from the projection data with 180° projection
 angle. Unfiltered backprojection is obtained by performing inverse radon transform on the 140th slice
 of the sinogram with linear interpolation. The content of unfiltered backprojection is glowing and the
@@ -17,7 +17,7 @@ textile of every section.
 ### Test 2
 **Calculate the sinogram, filtered and unfiltered backprojections for the 140th slice using only 1/10th of the projection data such that only neighbouring angles are used, i.e. a wedge shaped range of projection angles. Save your three images with similar names as for Task 1, substituting '1' for '2' in the file names.**
 #### Result of test 2
-![Image](https://github.com/weiyi-li/Low-Data-Spiral-CT-Reconstruction/blob/main/Image/Test2.png)
+![Image](https://github.com/weiyi-li/Low-Data-Spiral-CT-Reconstruction/blob/main/Image/Test2.png)  
 Since only 1/10 projection data and neighbouring projection angles are used, the sinogram for 140th
 axial slice covers a 18°projection angle ranging from 1°to 18°, which is only 1/10 the length on angle
 axis. Same as Task 1, unfiltered backprojection is obtained by performing inverse radon transform on
@@ -29,7 +29,7 @@ image.
 ### Test 3
 **Calculate the sinogram, filtered and unfiltered backprojections for the 140th slice using only 1/10th of the projection data such that these angles are equally spaced over the available projections. Save your three images as above.**
 #### Result of test 3
-![Image](https://github.com/weiyi-li/Low-Data-Spiral-CT-Reconstruction/blob/main/Image/Test3.png)
+![Image](https://github.com/weiyi-li/Low-Data-Spiral-CT-Reconstruction/blob/main/Image/Test3.png)  
 The CT reconstruction for 140th axial slice is briefly achieved using 1/10 of the projection data by
 equally spacing the angles. Compared to Task 2, the lines in sinogram show that 18 angles are
 distributed equally with interval of 10°, spanning from 1°to 171°, which is nearly the full range of the
@@ -41,7 +41,7 @@ of data.
 ### Test 4
 **Simulate the acquisition of a spiral CT dataset and reconstruct the sinogram, filtered and unfiltered backprojections for the 140th slice. You should use a pitch of 18, i.e. there are 18 neighbouring projection angles acquired for each axial position. Due to the axial translation of the scan bed the next 18 angles will be acquired for the neighbouring axial position, i.e. only 10th of the available data is used for the reconstruction of the 140th slice, but over different axial positions. Save your images as above. Explain your approach to this task in the Word document as well as commenting on the result.**
 #### Result of test 4
-![Image](https://github.com/weiyi-li/Low-Data-Spiral-CT-Reconstruction/blob/main/Image/Test4.png)
+![Image](https://github.com/weiyi-li/Low-Data-Spiral-CT-Reconstruction/blob/main/Image/Test4.png)  
 The translation axis is defined as k and should be considered in spiral CT reconstruction. To reconstruct
 the 140th slice using only 1/10 of data in spiral CT, the 140th slice should be reconstructed by the actual
 data acquired from the rotating 18°angles on the 140th slice and other 9 neighbouring slices. Following
