@@ -1,7 +1,7 @@
 # Low-Data-Spiral-CT-Reconstruction
 This spiral CT slice reconstruction program with low data amount is based on MATLAB. Realized CT image reconstruction of specific slice with only 1/10 of the data by increasing the pitch and the maximum range of the projection angle of neighboring slices.
 ## Dataset
-
+The dataset the sinograms of 190 axial locations. For simplicity only the 140th slice will be considered in this practice. Dataset is too large to upload. Contact me via accesses in homepage to get dataset. 
 ## Demonstration
 ### Test 1
 ![Image](https://github.com/weiyi-li/Low-Data-Spiral-CT-Reconstruction/blob/main/Image/Test1.jpg)
