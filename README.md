@@ -1,7 +1,10 @@
 # Low-Data-Spiral-CT-Reconstruction
 This spiral CT slice reconstruction program with low data amount is based on MATLAB. Realized CT image reconstruction of specific slice with only 1/10 of the data by increasing the pitch and the maximum range of the projection angle of neighboring slices.
 ## Dataset
-The dataset is the sinograms of 190 axial locations. For simplicity only the 140th slice will be considered in this practice. Dataset is too large to upload. Contact me via accesses in homepage to get dataset. 
+The dataset is the sinograms of 190 axial locations. For simplicity only the 140th slice will be considered in this practice. Dataset is too large to upload.  
+Link to dataset 1: 链接：https://pan.quark.cn/s/4e9b368109f3 提取码：fBcN  
+Link to dataset 2: https://drive.google.com/file/d/104Qdl05H9oZic1PdJv16raogalg0fLLN/view?usp=drive_link  
+Contact me via accesses in homepage to get dataset if these links are expired. 
 ## Demonstration
 ### Test 1
 **Using the raw data in ‘CT projections.mat’, preview the sinogram for 140th axial slice. The sinogram will have dimensions 380 (projection coordinate) x 180 (projection angle). For the double for loop shown in the script fill in the missing line to form the 140th sinogram and save the image as ‘TASK_1_CT_SINOGRAM.png’. Alternatively you can delete the for loop and directly index the data you need from within the projections. Complete a filtered and an unfiltered backprojection and save the images as 'TASK_1_CT_FILTERED_BP.png' and 'TASK_1_CT_UNFILTERED_BP.png' respectively.**
